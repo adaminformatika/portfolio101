@@ -1,0 +1,12 @@
+/* https://fonts.google.com/specimen/Poppins?sidebar.open=true&selection.family=Poppins:wght@200 */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  canvas {
+    display: block;
+  }
+  
