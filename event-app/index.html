@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event booking app</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+</head>
+
+<body>
+    <header id="home">
+        <nav class="navbar">
+            <h1>Event</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#add-event">New event</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section id="events">
+            <h1 class="section-title">Events</h1>
+            <div class="events-container"></div>
+        </section>
+        <section id="add-event">
+            <h1 class="section-title">New Event</h1>
+            <form action="" class="form">
+                <input type="text" id="name" placeholder="Name">
+                <input type="text" id="attendee" placeholder="Attendees">
+                <textarea name="" id="description" cols="30" rows="10" placeholder="Description ..."></textarea>
+                <select name="" id="status">
+                    <option value="0">Free</option>
+                    <option value="1">Paid</option>
+                </select>
+                <button class="btn btn-primary"></button>
+            </form>
+        </section>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAmeIrHrRYDVmUiXWky6KLkCslioVoXTgA",
+            authDomain: "event-app-7889d.firebaseapp.com",
+            databaseURL: "https://event-app-7889d.firebaseio.com",
+            projectId: "event-app-7889d",
+            storageBucket: "event-app-7889d.appspot.com",
+            messagingSenderId: "459769369360",
+            appId: "1:459769369360:web:94a81693348052589a0b95"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore()
+    </script>
+
+    <script src="db.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
